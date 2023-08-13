@@ -21,5 +21,5 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build -t rushikesh11/guestbook-go
+        docker buildx build rushikesh11/guestbook-go
         docker push rushikesh11/guestbook-go
