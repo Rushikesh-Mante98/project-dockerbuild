@@ -16,7 +16,7 @@ jobs:
     - name: Build Docker Image
       run: |
         if [[ ${{ github.event.head_commit.message }} == *'BUILD_CONTAINER_IMAGE'* ]]; then
-          docker build -t rushikesh11/guestbook-go:latest .
+          docker build -t rushikesh11/guestbook-go:latest
         fi
       env:
         DOCKER_BUILDKIT: 1
